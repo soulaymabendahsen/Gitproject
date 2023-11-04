@@ -1,7 +1,7 @@
 package prosit4;
 
 class Responsable extends Employe {
-    private double prime;
+    protected double prime;
 
     public Responsable(int id, String nom, String adresse, int nbrHeures, double prime) {
         super(id, nom, adresse, nbrHeures);
