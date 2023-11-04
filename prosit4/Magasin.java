@@ -24,24 +24,25 @@ class Magasin {
         produits.add(produit);
     }
 
-    public void ajouterEmploye(Employe employe) {
+    private void ajouterEmploye(Employe employe) {
         if (employes.size() < 20) {
             employes.add(employe);
         } else {
-            System.out.println("Le nombre maximal d'employés a été atteint pour ce magasin.");
+            System.out.println("Le nombre maximal d'employï¿½s a ï¿½tï¿½ atteint pour ce magasin.");
         }
     }
+
 
     public void afficherDetails() {
         System.out.println("Magasin " + nom);
         System.out.println("id : " + id);
         System.out.println("Adresse : " + adresse);
-        System.out.println("Capacité : " + capacite);
+        System.out.println("Capacitï¿½ : " + capacite);
         System.out.println("Les Produits : ");
         for (Produit produit : produits) {
             System.out.println(produit.getNom() + " - " + produit.getPrix() + " DT");
         }
-        System.out.println("Les employés : ");
+        System.out.println("Les employï¿½s : ");
         for (Employe employe : employes) {
             System.out.println(employe);
         }
@@ -52,14 +53,14 @@ class Magasin {
             double salaire = 0;
             if (employe instanceof Responsable) {
                 Responsable responsable = (Responsable) employe;
-                salaire = responsable.getnbr_heures() * 10; 
+                salaire = responsable.getnbr_heures() * 10;
                 if (responsable.getnbr_heures() > 160) {
                     salaire += (responsable.getnbr_heures() - 160) * 10 * 0.2;
                 }
                 salaire += responsable.getPrime();
             } else if (employe instanceof Caissier) {
                 Caissier caissier = (Caissier) employe;
-                salaire = caissier.getnbr_heures() * 5; 
+                salaire = caissier.getnbr_heures() * 5;
                 if (caissier.getnbr_heures() > 180) {
                     salaire += (caissier.getnbr_heures() - 180) * 5 * 0.15;
                 }
