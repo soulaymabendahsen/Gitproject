@@ -20,11 +20,14 @@ class Magasin {
         this.employes = new ArrayList<>();
     }
 
+    public Magasin(int id, String nom, String adresse, int capacite) {
+     
+    }
     public void ajouterProduit(Produit produit) {
         produits.add(produit);
     }
 
-    private void ajouterEmploye(Employe employe) {
+    public  void ajouterEmploye(Employe employe) {
         if (employes.size() < 20) {
             employes.add(employe);
         } else {
