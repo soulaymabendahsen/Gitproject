@@ -13,4 +13,15 @@ class Caissier extends Employe {
     public double getnumeroDeCaisse() {
         return numeroDeCaisse;
     }
+
+    @Override
+    public String toString() {
+        return "Caissier{" +
+                "numeroDeCaisse=" + numeroDeCaisse +
+                ", id=" + id +
+                ", nom='" + nom + '\'' +
+                ", adresse='" + adresse + '\'' +
+                ", nbr_heures=" + nbr_heures +
+                '}';
+    }
 }
