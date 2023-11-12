@@ -11,4 +11,18 @@ class Responsable extends Employe {
     public double getPrime() {
         return prime;
     }
+
+    // Add a new method
+    public void setPrime(double prime) {
+        this.prime = prime;
+    }
+    
+    public double calculerSalaireAvecPrime(int a) {
+        // Add logic to calculate the salary including the prime
+        double salaireSansPrime = a; 
+        return salaireSansPrime + prime;
+    }
+    public void augmenterPrime(double pourcentageAugmentation) {
+        this.prime = this.prime + (this.prime * pourcentageAugmentation / 100);
+    }
 }
