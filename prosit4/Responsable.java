@@ -22,4 +22,7 @@ class Responsable extends Employe {
         double salaireSansPrime = a; 
         return salaireSansPrime + prime;
     }
+    public void augmenterPrime(double pourcentageAugmentation) {
+        this.prime = this.prime + (this.prime * pourcentageAugmentation / 100);
+    }
 }
