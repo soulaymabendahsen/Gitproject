@@ -11,4 +11,9 @@ class Responsable extends Employe {
     public double getPrime() {
         return prime;
     }
+
+    // Add a new method
+    public void setPrime(double prime) {
+        this.prime = prime;
+    }
 }
