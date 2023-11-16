@@ -13,9 +13,7 @@ class Employe {
         this.nbr_heures = nbr_heures;
     }
 
-    public int getId() {
-        return id;
-    }
+/* hassen modifyed this file for conflict */
 
     public String getNom() {
         return nom;
