@@ -13,7 +13,7 @@ class Employe {
         this.nbr_heures = nbr_heures;
     }
 
-/* hassen modifyed this */
+/* hassen modifyed this file for conflict */
 
     public String getNom() {
         return nom;
