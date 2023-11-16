@@ -5,7 +5,7 @@ class Employe {
     protected String nom;
     protected String adresse;
     protected int nbr_heures;
-    private static final int DEFAULT_NBR_HEURES = 0;
+
 
     
     public Employe(int id, String nom, String adresse, int nbr_heures) {
